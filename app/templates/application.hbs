@@ -1,3 +1,12 @@
 <h1> My project on ember.js </h1>
 
 {{g-map lat=37.7833 lng=-122.4167 zoom=12}}
+
+<div class="controls">
+  <label>
+    Zoom:
+    {{input type="range" value=zoom min=0 max=18 step=1}}
+  </label>
+</div>
+
+<footer> By: Augusto Gonzalez </footer>
