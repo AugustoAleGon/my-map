@@ -1,6 +1,10 @@
 <h1> My project on ember.js </h1>
 
-{{g-map lat=37.7833 lng=-122.4167 zoom=12}}
+{{#g-map lat=37.7833 lng=-122.4167 zoom=12 as |context|}}
+ {{g-map-marker context lat=37.7933 lng=-122.4167 title="Marker #1" body="This is my first place."}}
+ {{g-map-marker context lat=38 lng=-122 title="Marker #2" body="This is my second place."}}
+ {{g-map-marker context lat=37.79 lng=-122.41 title="Marker #3" body="This is my third place."}}
+{{/g-map}}
 
 <div class="controls">
   <label>
